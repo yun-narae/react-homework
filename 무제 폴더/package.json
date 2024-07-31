@@ -1,0 +1,24 @@
+{
+    "name": "react-homework",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "node server.mjs",
+        "build": "vite build",
+        "preview": "vite preview",
+        "lint": "pnpm eslint ./src --report-unused-disable-directives --ignore-pattern .gitignore"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.8.0",
+        "eslint": "9.x",
+        "eslint-plugin-react": "^7.35.0",
+        "globals": "^15.8.0",
+        "live-server": "^1.2.2",
+        "vite": "^5.3.5"
+    },
+    "dependencies": {
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    }
+}
