@@ -1,17 +1,15 @@
-import React, { StrictMode } from 'react';
+import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import AvatarListPage from '@/pages/AvatarList';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>React 웹 앱</h1>
-    </div>
+const container = document.getElementById('react-app');
+
+if (container) {
+  createRoot(container).render(
+    <StrictMode>
+      <AvatarListPage />
+    </StrictMode>
   );
+} else {
+  console.warn('문서에 "#app" 요소가 존재하지 않습니다.');
 }
-
-const domNode = document.getElementById('react-app');
-createRoot(domNode).render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);

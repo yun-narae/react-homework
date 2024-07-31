@@ -1,16 +1,15 @@
 import { defineConfig } from 'vite';
-import plugInReact from '@vitejs/plugin-react';
 import { fileURLToPath, URL } from 'node:url';
+import pluginReact from '@vitejs/plugin-react';
 
-export default defineConfig({
+const viteConfig = defineConfig({
   base: '/',
   server: {
     host: 'localhost',
     port: 3000,
-    open: false,
   },
   plugins: [
-    plugInReact({
+    pluginReact({
       jsxRuntime: 'automatic',
     }),
   ],
@@ -20,3 +19,5 @@ export default defineConfig({
     },
   },
 });
+
+export default viteConfig;
